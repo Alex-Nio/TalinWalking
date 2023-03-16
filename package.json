@@ -70,12 +70,7 @@
         "webpack-stream": "^5.2.1",
         "yargs": "^15.4.1"
     },
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.15.4",
-        "font-awesome": "^4.7.0",
-        "fontawesome": "^5.6.3",
-        "jquery": "^3.6.3"
-    },
+    "dependencies": {},
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
