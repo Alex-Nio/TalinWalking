@@ -1,0 +1,149 @@
+.other-tours {
+	&__inner {
+		margin-bottom: 64px;
+	}
+
+	&__top {
+		margin-bottom: 64px;
+	}
+}
+
+.tours-slider {
+	&__navigation {
+		display: none;
+	}
+}
+
+.tour-card {
+	@include fdcjc_aic;
+	cursor: pointer;
+
+	&:hover {
+		& .tour-card-control {
+			top: 16px;
+			right: 16px;
+			@include defaultTransition();
+		}
+
+		& .tour-card__image {
+			top: 0;
+			max-width: 373px;
+			@include defaultTransition();
+		}
+
+		& .tour-card__title {
+			text-decoration: underline;
+		}
+	}
+
+	&__inner {
+		overflow: hidden;
+	}
+
+	&__top {
+		position: relative;
+		overflow: hidden;
+		height: 366px;
+	}
+
+	&__image {
+		position: absolute;
+		width: 100%;
+		max-width: 313px;
+		top: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 5;
+		@include defaultTransition();
+	}
+
+	&__bottom {
+		padding: 24px 30px 30px;
+	}
+
+	&__title {
+		font-family: $ff_UM;
+		font-size: calc(20px + 12 * (100vw / 1920));
+		line-height: calc(28px + 10 * (100vw / 1920));
+		margin-bottom: 16px;
+		color: $black;
+	}
+
+	&__text {
+		font-family: $ff_UR;
+		font-size: calc(14px + 2 * (100vw / 1920));
+		line-height: 22px;
+		color: $gray-dark;
+	}
+}
+
+.tour-card-control {
+	position: fixed;
+	top: 46px;
+	right: 46px;
+	width: 40px;
+	height: 40px;
+	z-index: 10;
+	background-color: $white;
+	border-radius: 100%;
+	@include defaultTransition();
+
+	&:hover {
+		background-color: $BG-to-fav;
+
+		&:before {
+			background: url('/img/svg/heart-hover.svg') no-repeat center center / contain;
+		}
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20px;
+		height: 19px;
+		background: url('/img/svg/heart-empty.svg') no-repeat center center / contain;
+	}
+
+	&.active {
+		background-color: $white;
+
+		&:before {
+			background: url('/img/svg/heart-filled.svg') no-repeat center center / contain;
+		}
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	.tours-slider__navigation {
+		display: flex;
+		justify-content: space-between;
+		margin: 24px auto 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.other-tours__top {
+		margin-bottom: 40px;
+	}
+
+	.tour-card-control {
+		top: 16px;
+		right: 16px;
+	}
+
+	.tour-card:hover {
+		pointer-events: none;
+	}
+
+	.tour-card__top {
+		height: 284px;
+	}
+
+	.tour-card__image {
+		top: 0;
+	}
+}

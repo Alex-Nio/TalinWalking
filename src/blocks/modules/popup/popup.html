@@ -1,0 +1,107 @@
+<div class="popup popup-opened">
+	<div class="popup-container">
+		<div class="popup-content">
+			<div class="popup-content__inner">
+				<div class="popup-content__top">
+					<h2 class="title">Feedback</h2>
+					<button class="popup-close"></button>
+				</div>
+				<div class="popup-content__form">
+					<form class="feedback-form" action="#">
+
+						<div class="form-field">
+							<div class="form-field__inner">
+								<div class="form-action">
+									<label class="form-action__label" for="name">Your name</label>
+									<input type="name" name="name" id="name" class="form-input input-name" placeholder="Placeholder" required>
+									<span class="validation-control"></span>
+								</div>
+								<div class="form-action">
+									<label class="form-action__label" for="email">Email address</label>
+									<input type="email" name="email" id="email" class="form-input input-email" placeholder="Placeholder" required>
+									<span class="validation-control"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-field">
+							<div class="form-field__inner">
+								<div class="form-action">
+									<label class="form-action__label" for="phone">Your phone</label>
+									<input type="phone" name="phone" id="phone" class="form-input input-phone" placeholder="Placeholder" required>
+									<span class="validation-control"></span>
+								</div>
+								<div class="form-action">
+									<label class="form-action__label" for="name">Choose a trip</label>
+									<!-- select -->
+									<div class="form-select">
+										<div class="form-select__selector">
+											<div class="form-select__label">
+												<span class="form-select__title">Choose</span>
+												<span class="arrow-icon"></span>
+											</div>
+											<div class="hidden">
+												<ul class="form-select__list">
+													<li class="form-select__list-item">
+														Walking in Old Tallinn
+													</li>
+													<li class="form-select__list-item">
+														St. Isaac's Cathedral
+													</li>
+													<li class="form-select__list-item">
+														The Bridge of Peace
+													</li>
+													<li class="form-select__list-item">
+														El Caminito del Rey
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-field">
+							<div class="form-chips">
+								<div class="chip active">
+									Reviews and suggestions
+								</div>
+								<div class="chip">
+									Question about content
+								</div>
+								<div class="chip">
+									Complaints
+								</div>
+								<div class="chip">
+									Other
+								</div>
+							</div>
+						</div>
+
+						<div class="form-field">
+							<div class="ask-action">
+								<label class="form-action__label">Describe your question</label>
+								<textarea class="textarea-field" name="question" id="question" cols="30" rows="10" placeholder="Placeholder"></textarea>
+							</div>
+						</div>
+
+						<div class="form-field">
+							<div class="form-action">
+								<div class="agreement">
+									<label class="agreement__label">
+										<input class="agreement__checkbox" type="checkbox" required />
+										Даю согласие на обработку
+									</label>
+								</div>
+							</div>
+
+							<button class="btn btn-submit" type="submit">Send</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

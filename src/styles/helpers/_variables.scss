@@ -1,0 +1,62 @@
+// Base colors
+$white: #ffffff;
+$black: #232323;
+$gray-light: rgba(35, 35, 35, 0.4);
+$gray-dark: rgba(35, 35, 35, 0.7);
+
+// Bg
+$page_background: #ffffff;
+
+// Font Size
+$base_fz: 1rem;
+$base_ff: 'Ubuntu Regular', sans-serif;
+$base_color: $black;
+
+// Hovers
+$base_hover: #232323;
+
+// Btns
+$BG-btn-default: #659DBD;
+$BG-btn-hover: #5B8DAA;
+$BG-to-fav: #E7717D;
+$btn-color-default: #EAEAEA;
+
+// Inputs
+$control-color-default: rgba(35, 35, 35, 0.7);
+$control-text-color: #232323;
+//
+$control-color-hover: #659DBD;
+$control-color-focus: #659DBD;
+$control-color-success: #A2E0B2;
+$control-color-error: #E7717D;
+//
+$control-border-default: 1px solid #EAEAEA;
+$control-border-hover: 1px solid #659DBD;
+$control-border-focus: 1px solid #659DBD;
+$control-border-success: 1px solid #A2E0B2;
+$control-border-error: 1px solid #E7717D;
+
+// Slider Btns
+$slider-btn-default: #EAEAEA;
+$slider-btn-active: #E7717D;
+$slider-btn-hover: #E7717D;
+
+
+// Fonts
+$ff_UR: "Ubuntu Regular", sans-serif;
+$ff_UM: "Ubuntu Medium", sans-serif;
+
+//? Style
+$I: italic;
+$O: oblique;
+
+//? Weight
+$th: 100; // Thin
+$el: 200; // Extra Light
+$l: 300; // Light
+$r: 400; // Regular
+$m: 500; // Medium
+$sb: 600; // SemiBold
+$b: 700; // Bold
+$eb: 800; // Extra Bold
+$bl: 900; // Super

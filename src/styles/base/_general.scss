@@ -1,0 +1,266 @@
+// -----------------------------------------------
+// --------------MAIN SETTINGS--------------------
+// -----------------------------------------------
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	line-height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	font-size: $base_fz;
+	font-family: $base_ff;
+	font-style: normal;
+	color: $base_color;
+	background: $page_background;
+	overflow-x: hidden;
+	backface-visibility: hidden;
+	line-height: 1;
+	-webkit-backface-visibility: hidden;
+
+	&.locked {
+		overflow-y: hidden;
+	}
+}
+
+//? Общая обёртка
+.full-wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	height: 100%;
+	min-height: 100vh;
+}
+
+//? Размеры контейнеров
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1224px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+footer {
+	flex-shrink: 0;
+}
+
+img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+
+a {
+	cursor: pointer;
+	font-family: inherit;
+	color: inherit;
+	text-decoration: none;
+	@include defaultTransition();
+
+	&:hover {
+		color: $base_hover;
+		@include defaultTransition();
+	}
+}
+
+span {
+	display: inline-block;
+}
+
+button {
+	outline: none;
+	border: transparent;
+	background: transparent;
+	cursor: pointer;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+input,
+textarea {
+
+	&:focus,
+	:active {
+		outline: none;
+	}
+}
+
+.title {
+	font-family: $ff_UM;
+	font-size: calc(24px + 16 * (100vw / 1920));
+	line-height: 46px;
+}
+
+.text-default {
+	font-family: $ff_UR;
+	font-size: 18px;
+	line-height: 24px;
+	color: $gray-light;
+}
+
+// ------------------------------------------------
+// --------------UNIC BUTTONS----------------------
+// ------------------------------------------------
+
+.control {
+	padding: 12px 64px;
+	width: 100%;
+	max-width: 354px;
+	min-width: 166px;
+	height: 64px;
+}
+
+.btn {
+	color: $white;
+	font-family: $ff_UR;
+	background-color: $BG-btn-default;
+	font-size: 1.6rem;
+	@include base-hover($BG-btn-hover);
+}
+
+// Slider btns and nav
+.slider-navigation {
+	width: 112px;
+}
+
+.slider-button-prev,
+.slider-button-next {
+	&.swiper-button-disabled {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		border: 1px solid $slider-btn-default;
+		border-radius: 100%;
+		@include defaultTransition();
+
+		&:before {
+			color: $slider-btn-default;
+		}
+
+		&:hover {
+			cursor: not-allowed;
+			border: 1px solid $slider-btn-default;
+			background-color: transparent;
+
+			&:before {
+				color: $slider-btn-default;
+			}
+		}
+	}
+
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border: 1px solid $slider-btn-active;
+	border-radius: 100%;
+	@include defaultTransition();
+
+	&:hover {
+		cursor: pointer;
+		background-color: $slider-btn-active;
+		border: $slider-btn-active;
+		@include slowTransition();
+
+		&:before {
+			color: $white;
+			@include fastTransition();
+		}
+	}
+}
+
+.slider-button-next {
+	&:before {
+		content: '⌵';
+		position: absolute;
+		top: 50%;
+		left: 45%;
+		transform: translate(-50%, -50%) rotate(-90deg);
+		font-size: 1.6rem;
+		color: $slider-btn-active;
+		@include defaultTransition();
+	}
+}
+
+.slider-button-prev {
+	&:before {
+		content: '⌵';
+		position: absolute;
+		top: 50%;
+		left: 55%;
+		transform: translate(-50%, -50%) rotate(90deg);
+		font-size: 1.6rem;
+		color: $slider-btn-active;
+	}
+}
+
+// Chips
+.chip {
+	font-family: $ff_UR;
+	font-size: calc(14px + 2 * (100vw / 1920));
+	margin-right: 32px;
+	color: $gray-dark;
+	line-height: 22px;
+	padding: 21px 64px;
+	border: $control-border-default;
+	white-space: nowrap;
+	@include defaultTransition();
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:hover {
+		cursor: pointer;
+		border: $control-border-hover;
+		color: $black;
+		@include defaultTransition();
+	}
+
+	&.active {
+		background-color: $BG-btn-default;
+		color: $white;
+		@include defaultTransition();
+	}
+}
+
+@media screen and (max-width: 1320px) {
+	.chip {
+		margin-bottom: 16px;
+	}
+
+	.form-chips {
+		margin: 64px 0 43px 0;
+	}
+}
+
+@media screen and (max-width: 354px) {
+	.chip {
+		padding: 21px 30px;
+	}
+}

@@ -1,0 +1,62 @@
+.about {
+	&__inner {
+		margin: 64px 0;
+	}
+}
+
+.about-content {
+	@include fdc;
+
+	&__top {
+		@include fdrjsb_aic;
+		margin-bottom: 73px;
+	}
+
+	&__text {
+		width: 100%;
+		max-width: 586px;
+	}
+
+	&__bottom {
+		margin-top: 64px;
+	}
+}
+
+.about-text {
+	margin-bottom: 24px;
+
+	&:first-child {
+		margin-bottom: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.about-slider__navigation {
+	@include fdrjsb_aic;
+	margin: 32px auto 0;
+}
+
+// Swiper styles
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 856px) {
+	.about__inner {
+		margin: 40px 0;
+	}
+
+	.about-content__top {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 40px;
+
+		& .title {
+			margin-bottom: 40px;
+		}
+	}
+}
