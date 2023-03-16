@@ -1142,7 +1142,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/img/main-banner.jpg") no-repeat center/cover;
+  background: url("../img/main-banner.jpg") no-repeat center/cover;
 }
 
 .about__inner {
@@ -1289,7 +1289,7 @@ header {
 }
 
 .tour-card-control:hover:before {
-  background: url("/img/svg/heart-hover.svg") no-repeat center center/contain;
+  background: url("../img/svg/heart-hover.svg") no-repeat center center/contain;
 }
 
 .tour-card-control:before {
@@ -1300,7 +1300,7 @@ header {
   transform: translate(-50%, -50%);
   width: 20px;
   height: 19px;
-  background: url("/img/svg/heart-empty.svg") no-repeat center center/contain;
+  background: url("../img/svg/heart-empty.svg") no-repeat center center/contain;
 }
 
 .tour-card-control.active {
@@ -1308,7 +1308,7 @@ header {
 }
 
 .tour-card-control.active:before {
-  background: url("/img/svg/heart-filled.svg") no-repeat center center/contain;
+  background: url("../img/svg/heart-filled.svg") no-repeat center center/contain;
 }
 
 .popup {

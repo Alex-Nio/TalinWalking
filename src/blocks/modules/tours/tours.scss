@@ -92,7 +92,7 @@
 		background-color: $BG-to-fav;
 
 		&:before {
-			background: url('/img/svg/heart-hover.svg') no-repeat center center / contain;
+			background: url('../img/svg/heart-hover.svg') no-repeat center center / contain;
 		}
 	}
 
@@ -104,14 +104,14 @@
 		transform: translate(-50%, -50%);
 		width: 20px;
 		height: 19px;
-		background: url('/img/svg/heart-empty.svg') no-repeat center center / contain;
+		background: url('../img/svg/heart-empty.svg') no-repeat center center / contain;
 	}
 
 	&.active {
 		background-color: $white;
 
 		&:before {
-			background: url('/img/svg/heart-filled.svg') no-repeat center center / contain;
+			background: url('../img/svg/heart-filled.svg') no-repeat center center / contain;
 		}
 	}
 
