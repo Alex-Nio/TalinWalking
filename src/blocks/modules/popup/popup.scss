@@ -69,13 +69,12 @@
 
 .popup-content {
 	position: absolute;
-	top: 50%;
+	top: 175px;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translateX(-50%);
 	width: 100%;
 	max-width: 1224px;
 	height: 100%;
-	max-height: 80vh;
 	overflow-y: scroll;
 	background-color: $white;
 	padding: 0 20px;
@@ -641,5 +640,11 @@
 
 	.btn-submit {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.popup-content {
+		top: 200px;
 	}
 }
