@@ -6,7 +6,7 @@ header {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	min-height: 200px;
+	min-height: 480px;
 	background-color: $black;
 }
 
@@ -17,4 +17,10 @@ header {
 	right: 0;
 	bottom: 0;
 	background: url('../img/main-banner.jpg') no-repeat center / cover;
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		min-height: 200px;
+	}
 }
