@@ -42,7 +42,7 @@ _Thank you for considering this test project. If you have any questions or feedb
 ## :open_file_folder: Файловая структура
 
 ```
-gulp-scss-starter
+project
 ├── dist
 ├── gulp-tasks
 ├── src
