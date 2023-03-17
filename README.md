@@ -22,7 +22,7 @@ This is a test project for the DreamTeam studio. The project is a web page that 
 - Interactive buttons for providing feedback
 - Form
 
-##🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - HTML
 - SCSS
